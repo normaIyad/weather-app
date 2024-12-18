@@ -46,7 +46,7 @@ function getWeather(zipCode , feelings) {
 button.addEventListener('click',(e)=>{
     e.preventDefault();
     let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth() + 1)+'/'+ d.getDate()+'/'+ d.getFullYear();
 dates.innerHTML =  `Date :  ${newDate}`;
     getWeather(zip.value , feelings.value );
     const entry = {
